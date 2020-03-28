@@ -1,0 +1,12 @@
+<view class='profile'>
+<view class="profile-img">
+  <!-- <open-data type="userAvatarUrl" ></open-data> -->
+  <image src="{{imgInfo}}"></image>
+</view>
+  <open-data type="userNickName" class="profile-name"></open-data>
+</view>
+<button open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
+<button bindtap="getCode">获取小程序码</button>
+<button bindtap="saveImg">保存小程序码</button>
+<button bindtap="getCodeInfo">获取小程序码信息</button>
+
