@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    movieList:[]
+    movieList:[],
+    sceneData:"",
+    sceneDataJson:"",
+    sceneDataPars:""
   },
   /**
    * 生命周期函数--监听页面加载
@@ -36,10 +39,14 @@ Page({
   onLoad: function (options) {
     this.getInfo()
     var scene = decodeURIComponent(options.scene)
-    wx.showToast({
-      title: JSON.stringify(scene),
-      duration:10000
+    this.setData({
+      sceneData: scene,
     })
+    console.log(typeof this.data.sceneData,"sceneData")
+    this.setData({
+      sceneDataJson: JSON.stringify(scene),
+    })
+    console.log(typeof this.data.sceneDataJson, "sceneDataJson")
   },
 
   /**
