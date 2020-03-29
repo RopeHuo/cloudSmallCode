@@ -6,9 +6,18 @@ Page({
    */
   data: {
     imgInfo: "",
-    code: 654321,
-    goodsId: 123456,
-    userName: "ropeHuo"
+    code: "",
+    goodsId:"" ,
+    userName: ""
+  },
+  iptEdit(e){
+    let dataset = e.currentTarget.dataset;
+    let value = e.detail.value;
+    let name = dataset.name;
+    this.data[name]=value;
+    this.setData({
+      name:this.data[name]
+    })
   },
   getCode() {
     wx.cloud.callFunction({
