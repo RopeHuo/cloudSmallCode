@@ -9,7 +9,7 @@
 <input value="{{goodsId}}" data-name="goodsId" bindinput="iptEdit" placeholder="输入商品id"></input>
 <input value="{{userName}}" data-name="userName" bindinput="iptEdit" placeholder="输入用户名"></input>
 
-<button open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
+<!-- <button open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">获取用户信息</button> -->
 <button bindtap="getCode">获取小程序码</button>
 <button bindtap="saveImg">保存小程序码</button>
 <button bindtap="getCodeInfo">获取小程序码信息</button>
